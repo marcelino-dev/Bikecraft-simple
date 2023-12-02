@@ -1,0 +1,204 @@
+body {
+  background-color: #f7f7f7;
+  display: grid;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  gap: 60px;
+  margin-top: 60px;
+}
+
+header {
+  display: grid;
+  gap: 60px;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.navegacao li a {
+  display: block;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 1.63rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.titulo {
+  justify-self: center;
+}
+
+.navegacao {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn-nav {
+  background-color: white;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  color: black;
+  border-radius: 4px;
+  border: solid white 2px;
+}
+
+.btn-nav:hover {
+  border: solid #ee2211 2px;
+}
+
+.informações {
+  display: grid;
+  max-width: 1000px;
+  grid-template-columns: 1fr 1fr;
+  justify-self: center;
+}
+
+.detalhes {
+  position: relative;
+  display: grid;
+  padding: 40px;
+  background-color: white;
+  text-align: end;
+  place-items: center end;
+  align-content: center;
+  gap: 20px;
+}
+
+.detalhes h2 {
+  font-size: 2rem;
+}
+
+.detalhes h2::before {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background-color: #ee2211;
+  position: absolute;
+  top: 30px;
+  right: -30px;
+}
+
+.detalhes a {
+  text-decoration: none;
+  color: white;
+  background-color: #ee2211;
+  border-radius: 4px;
+  padding: 1rem 2rem;
+}
+
+.detalhes a:hover {
+  background-color: #900;
+}
+
+.vantagens {
+  color: #c6c6c6;
+  text-align: end;
+  align-self: center;
+  background-image: url(./img/onda.svg);
+}
+
+.vantagens h2 {
+  padding: 40px;
+  font-size: 4rem;
+  color: #c6c6c6;
+  text-align: end;
+}
+
+.especificacoes {
+  padding: 40px;
+  display: grid;
+  background-color: white;
+  margin: 0px;
+}
+
+.especificacoes-item:nth-child(odd) {
+  background-color: #f7f7f7;
+}
+
+.especificacoes-item {
+  border-left: solid transparent 4px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px 20px;
+  padding: 20px;
+}
+
+.especificacoes-item:hover {
+  border-left: solid #ee2211 4px;
+}
+
+.especificacoes-item p {
+  grid-column: 2;
+}
+
+footer {
+  padding: 30px 0px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+  body {
+    gap: 30px;
+  }
+  header {
+    gap: 30px;
+  }
+  .detalhes h2::before {
+    display: none;
+  }
+  .informações {
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: 1fr;
+    justify-self: center;
+  }
+  .detalhes {
+    text-align: start;
+    place-items: center start;
+  }
+  .vantagens h2 {
+    font-size: 3rem;
+    text-align: center;
+    align-self: center;
+  }
+  .navegacao {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: center;
+    gap: 20px;
+  }
+  /* .navegacao li {
+    flex-basis: 40%;
+  } */
+  .navegacao li a {
+    text-align: center;
+  }
+}
+
+@media (max-width: 630px) {
+  .navegacao li {
+    flex-basis: 43%;
+  }
+}
