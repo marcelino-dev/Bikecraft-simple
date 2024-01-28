@@ -1,20 +1,24 @@
-:root {
-  --cor-fundo: #0f0f0f;
-  --cor-fundo2: #010101;
-  --cor-fonte-principal: #ffffff;
-  --cor-fonte-secundaria: rgba(255, 255, 255, 0.2);
-  --cor-primaria: #ee2211;
-  --cor-secundaria: #900;
-  --onda: url("./img/onda-escura.svg");
-}
-
-@media (prefere-color-scheme: light) {
+@media (prefers-color-scheme: light) {
   :root {
     --cor-fundo: #f7f7f7;
     --cor-fundo2: #ffffff;
     --cor-fonte-principal: #000000;
     --cor-fonte-secundaria: rgba(0, 0, 0, 0.2);
     --onda: url("./img/onda-clara.svg");
+    --cor-primaria: #ee2211;
+    --cor-secundaria: #900;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --cor-fundo: #0f0f0f;
+    --cor-fundo2: #010101;
+    --cor-fonte-principal: #ffffff;
+    --cor-fonte-secundaria: rgba(255, 255, 255, 0.2);
+    --cor-primaria: #ee2211;
+    --cor-secundaria: #900;
+    --onda: url("./img/onda-escura.svg");
   }
 }
 
