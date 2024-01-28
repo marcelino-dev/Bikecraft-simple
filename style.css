@@ -1,15 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+}
+
 body {
   background-color: #f7f7f7;
   display: grid;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0px;
-  gap: 60px;
   margin-top: 60px;
+  height: 95%;
+  align-content: space-between;
+}
+
+.conteudo {
+  display: grid;
+  gap: 60px;
+  margin-bottom: 60px;
 }
 
 header {
   display: grid;
   gap: 60px;
+  align-self: start;
 }
 
 p,
@@ -68,6 +84,7 @@ img {
   max-width: 1000px;
   grid-template-columns: 1fr 1fr;
   justify-self: center;
+  align-self: start;
 }
 
 .detalhes {

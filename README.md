@@ -5,3 +5,4 @@ Nesse Projeto simples de HTML e CSS foram utilizados e aprendidos algumas habili
 - Uso de Pseudo classe e Pseudo Elemento.
 - Uso da semantica em HMTL e sua importancia para buscadores e leitores de páginas.
 - Responsividade e uso de Media Querys para ajustes automáticos para melhor enquadramento em diferentes disposítivos.
+- Uso de Media Queries para alteração do Tema de site.
